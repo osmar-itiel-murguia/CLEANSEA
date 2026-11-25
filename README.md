@@ -2,7 +2,7 @@
 
 # Especificación de Requerimientos de Software (SRS)
 
-## Río Limpio — Videojuego de limpieza de cuerpos de agua
+## CLEANSEA — Videojuego de limpieza de cuerpos de agua
 
 **Versión:** 1.0\
 **Fecha:** 24 de noviembre de 2026\
@@ -12,7 +12,6 @@
 - Karol Roberto Navarro Urzúa
 
 **Materia:** Introducción a la Ingeniería de Software\
-**Profesor:** Anónimo
 
 ---
 
@@ -32,13 +31,13 @@
 
 ## 1.1 Propósito
 
-Este documento establece los requerimientos funcionales y no funcionales del videojuego **Río Limpio**. Describe sus características, mecánicas, progresión, interfaces y condiciones técnicas que deberá cumplir durante su desarrollo.
+Este documento establece los requerimientos funcionales y no funcionales del videojuego **CLEANSEA**. Describe sus características, mecánicas, progresión, interfaces y condiciones técnicas que deberá cumplir durante su desarrollo.
 
 Está dirigido al equipo de desarrollo y al personal académico encargado de evaluar el proyecto.
 
 ## 1.2 Alcance
 
-**Río Limpio** es un videojuego educativo y recreativo en el que el jugador controla a un personaje que explora diferentes cuerpos de agua con el objetivo de recolectar basura y reducir la contaminación de cada escenario.
+**CLEANSEA** es un videojuego educativo y recreativo en el que el jugador controla a un personaje que explora diferentes cuerpos de agua con el objetivo de recolectar basura y reducir la contaminación de cada escenario.
 
 El jugador podrá vender los residuos recolectados, obtener dinero y utilizarlo para comprar mejoras que faciliten la exploración y limpieza de los escenarios.
 
@@ -68,8 +67,6 @@ El videojuego contará inicialmente con cinco escenarios, cada uno con diferente
 - Rankings en línea.
 - Editor de niveles.
 - Funciones que requieran conexión a internet.
-
-*Estas exclusiones corresponden al alcance inicial del proyecto.*
 
 ## 1.3 Definiciones, acrónimos y abreviaturas
 
