@@ -1,4 +1,4 @@
-```
+```mermaid
     usecase-beta
     direction LR
     actor Jugador
