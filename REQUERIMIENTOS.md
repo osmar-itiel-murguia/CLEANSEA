@@ -1,5 +1,6 @@
 # CLEANSEA — Videojuego de limpieza de cuerpos de agua
 
+**Materia:** Introducción a la Ingeniería de Software\
 **Equipo:**
 
 - Osmar Itiel Murguía Hernández
