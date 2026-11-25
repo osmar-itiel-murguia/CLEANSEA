@@ -69,6 +69,120 @@
 ```
 
 ```mermaid
+classDiagram
+    %% ===== CLASES ORIGINALES (de tu diagrama) =====
+    class Economia {
+        +float valor
+    }
 
+    class Basura {
+        +String clase
+        +int cantidad
+        +int espacio
+        +flotar()
+    }
 
+    class Lata {
+        +float peso
+        -probcant()
+    }
+
+    class botella {
+        +String tipos
+    }
+
+    class Tienda {
+        +float precio
+        +int cantidad
+        #objetos()
+    }
+
+    class venta {
+        -String producto
+        -venta()
+    }
+
+    class mejoras {
+        -bool permanente
+        +float tiempo
+        #mejoras()
+    }
+
+    %% ===== CLASES NUEVAS =====
+    class Jugador {
+        +String nombre
+        +float dinero
+        +int nivelActual
+        +recolectar()
+        +venderBasura()
+        +comprarMejora()
+    }
+
+    class Inventario {
+        +int capacidad
+        +int espacioUsado
+        +agregar()
+        +vaciar()
+        +estaLleno() bool
+    }
+
+    class Nivel {
+        +int numero
+        +float porcentajeRequerido
+        +bool desbloqueado
+        +bool completado
+        +verificarAvance() bool
+    }
+
+    class CuerpoDeAgua {
+        +String nombre
+        +float porcentajeLimpieza
+        +actualizarLimpieza()
+        +generarBasura()
+    }
+
+    class Herramienta {
+        +String nombre
+        +int alcance
+        +float velocidad
+        +usar()
+    }
+
+    class Partida {
+        +int id
+        +guardar()
+        +cargar()
+    }
+
+    class Progreso {
+        +float porcentaje
+        +calcular()
+        +desbloquearNivel()
+    }
+
+    %% ===== HERENCIA (de tu diagrama) =====
+    Economia <|-- Basura
+    Economia <|-- Tienda
+    Basura <|-- Lata
+    Basura <|-- botella
+    Tienda <|-- venta
+    Tienda <|-- mejoras
+
+    %% ===== ASOCIACIONES (de tu diagrama + nuevas) =====
+    Tienda --> Basura : compra / valora
+
+    Jugador "1" *-- "1" Inventario : posee
+    Inventario "1" o-- "0..*" Basura : contiene
+    Jugador "1" --> "0..*" mejoras : adquiere
+    Jugador "1" --> "1" Tienda : interactúa
+    Jugador "1" --> "0..*" Herramienta : usa
+    Mejoras_Herramienta
+
+    Nivel "1" *-- "1" CuerpoDeAgua : tiene
+    CuerpoDeAgua "1" o-- "0..*" Basura : genera
+    Jugador "1" --> "1" Nivel : juega
+    Nivel "1" --> "1" Progreso : mide
+    Progreso ..> CuerpoDeAgua : lee porcentaje
+    Partida "1" --> "1" Jugador : guarda
+    Partida "1" --> "1..*" Nivel : registra
 ```
