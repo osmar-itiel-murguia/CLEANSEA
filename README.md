@@ -235,7 +235,7 @@ La información que deberá conservarse será:
 El guardado no se realizará simplemente por sumergirse en el agua.
 
 ---
-
+https://github.com/osmar-itiel-murguia/CLEANSEA/blob/main/pantallas.md
 
 **Fin del documento SRS — CLEAN SEA**
 
