@@ -67,3 +67,8 @@
     Avanzar ..> : include Verificar
     Comprar ..> : extend Vender
 ```
+
+```mermaid
+
+
+```
